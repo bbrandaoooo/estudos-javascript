@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>método write</title>
+</head>
+<body>
+    <h1>método write</h1>
+    <p>O método write() é usado para escrever dados diretamente no documento HTML. Ele pode ser usado para adicionar conteúdo dinâmico à página.</p>
+    <p>Exemplo:</p>
+    <script>
+        document.write("Olá, mundo!");
+        document.write("<br>");
+        document.write("Este é um exemplo de uso do método write().");
+
+    </script>
+    <br>
+    <script>
+        var nome = prompt("Qual é o seu nome?");
+        document.write(`Olá, ${nome}. Seu nome tem ${nome.length} letras.`)
+        // esse comando básicamente diz: "escreva no documento o que está entre crase" usando a template string
+        // o comando document.write() escreve no documento HTML
+        document.write(` Seu nome em maísculas é ${nome.toUpperCase()}.`)
+    </script>
+</body>
+</html>
